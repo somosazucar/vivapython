@@ -1,0 +1,26 @@
+body {
+    font-size: 14pt;
+    background: url('/images/snake.jpg');  
+    background-size: 300px 139px;
+    background-repeat:no-repeat;
+    background-position: 55% 46px;
+    display: compact;"
+    }
+navbar-header {
+    }
+h3 {
+    padding-top: 0px;
+    }
+.body-content {
+    padding: 65px;
+    }
+#gads-rectangulo {
+    padding: 0px;
+    text-align: center;
+    }
+.badge {
+    font-size: 16px;
+    }
+.tag {
+    font-size: 14px;
+    }

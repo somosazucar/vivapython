@@ -1,0 +1,8 @@
+*.pyc
+*.swp
+output/
+cache/
+importado/
+.doit.db
+id_rsa
+id_rsa.pub
