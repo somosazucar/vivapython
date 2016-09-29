@@ -165,9 +165,11 @@ TIMEZONE = "America/Bogota"
 #
 
 POSTS = (
+    ("posts/*.md", "articulos", "post.tmpl"),
     ("posts/*.rst", "articulos", "post.tmpl"),
 )
 PAGES = (
+    ("pages/*.md", "paginas", "story.tmpl"),
     ("pages/*.rst", "paginas", "story.tmpl"),
 )
 
