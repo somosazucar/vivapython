@@ -1,0 +1,4 @@
+Sitemap: http://vivapython.com/sitemapindex.xml
+
+User-Agent: *
+Host: vivapython.com
