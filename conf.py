@@ -138,6 +138,7 @@ TIMEZONE = "America/Bogota"
 # LOCALE_FALLBACK = locale to use when an explicit locale is unavailable
 # LOCALE_DEFAULT = locale to use for languages not mentioned in LOCALES; if
 # not set the default Nikola mapping is used.
+LOCALE_DEFAULT = "es_PE.UTF8"
 
 # POSTS and PAGES contains (wildcard, destination, template) tuples.
 #
