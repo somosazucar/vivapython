@@ -12,7 +12,7 @@ article: http://ogp.me/ns/article#
 <meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="http://vivapython.com/index.html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="articulos/automatiza-tu-ambiente-virtual-con-virtualenv-y-direnv.html" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="articulos/automatizate-con-virtualenv-y-direnv.html" type="text/html">
 </head>
 <body>
 
@@ -128,13 +128,13 @@ document.write(textArray[randomNumber]);
             
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="articulos/automatiza-tu-ambiente-virtual-con-virtualenv-y-direnv.html" class="u-url">Automatiza tu ambiente virtual con Virtualenv y Direnv</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="articulos/automatizate-con-virtualenv-y-direnv.html" class="u-url">Automatízate con Virtualenv y Direnv</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 <a href="authors/equipo-viva-python.html">equipo viva python</a>
             </span></p>
-            <p class="dateline"><a href="articulos/automatiza-tu-ambiente-virtual-con-virtualenv-y-direnv.html" rel="bookmark"><time class="published dt-published" datetime="2016-09-29T01:22:23-05:00" title="2016-09-29 01:22">2016-09-29 01:22</time></a></p>
-                <p class="commentline">            <a href="articulos/automatiza-tu-ambiente-virtual-con-virtualenv-y-direnv.html#disqus_thread" data-disqus-identifier="cache/posts/automatiza-tu-ambiente-virtual-con-virtualenv-y-direnv.html">Comments</a>
+            <p class="dateline"><a href="articulos/automatizate-con-virtualenv-y-direnv.html" rel="bookmark"><time class="published dt-published" datetime="2016-09-29T01:22:23-05:00" title="2016-09-29 01:22">2016-09-29 01:22</time></a></p>
+                <p class="commentline">            <a href="articulos/automatizate-con-virtualenv-y-direnv.html#disqus_thread" data-disqus-identifier="cache/posts/automatizate-con-virtualenv-y-direnv.html">Comments</a>
 
 
         </p>
@@ -160,7 +160,7 @@ $ <span class="nb">echo</span> <span class="s1">'export EDITOR="gedit"'</span> &
 <h4>Y la magia es...</h4>
 <p>Primero creamos y/o entramos a un directorio de proyecto, <code>mkdir -p ruta/a_mi_proyecto/ &amp;&amp; cd ruta/a_mi_proyecto/</code>.</p>
 <p>Luego crearemos la definición de entorno con el comando <code>direnv edit .</code>.</p>
-<p>Entramos lo siguiente en el editor vacío que se abrirá:</p>
+<p>Entramos lo siguiente en el editor vacío que se abrirá editando el archivo <code>.envrc</code>:</p>
 <pre class="code literal-block"><span></span>layout python
 </pre>
 
@@ -181,6 +181,9 @@ $ <span class="nb">echo</span> <span class="s1">'export EDITOR="gedit"'</span> &
 
 
 <p>Podrás comprobar que el intérprete de Python corre desde el entorno virtual con <code>which python</code>. Podrás instalar bibliotecas de Python en tu ambiente virtual sin interferir con tu sistema operativo. Cuando dejes el directorio, el ambiente se restaurará.</p>
+<p>Como referencia aquí dejo:
+- La documentación de <code>direnv</code>: https://github.com/direnv/direnv
+- Algunas notas específicas sobre Python y direnv: https://github.com/direnv/direnv/wiki/Python</p>
 </div>
     </div>
     </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="articulos/hoja-resumen-de-python.html" class="u-url">Hoja Resumen de Python 3</a></h1>
@@ -200,19 +203,19 @@ $ <span class="nb">echo</span> <span class="s1">'export EDITOR="gedit"'</span> &
 <p>Esta hoja la puedes imprimir, colocar en tu cuarto, ventana, cubículo, escritorio, etc.</p>
 <!-- TEASER_END -->
 <p>Descarga ya tu versión en <a class="reference external" href="documentos/mementopython3-espa%C3%B1ol.pdf">pdf</a> o la versión editable en formato LibreOffice Draw, <a class="reference external" href="documentos/mementopython3-espa%C3%B1ol.odg">odg</a>.</p>
-<div id="slides_d7868e7f51ac42059703a6a9c1ad8c1e" class="carousel slide">
+<div id="slides_5ad672191a1b470aa8070e3524867afd" class="carousel slide">
     <ol class="carousel-indicators">
-<li data-target="#slides_d7868e7f51ac42059703a6a9c1ad8c1e" data-slide-to="0" class="active">
+<li data-target="#slides_5ad672191a1b470aa8070e3524867afd" data-slide-to="0" class="active">
             </li>
-<li data-target="#slides_d7868e7f51ac42059703a6a9c1ad8c1e" data-slide-to="1">
+<li data-target="#slides_5ad672191a1b470aa8070e3524867afd" data-slide-to="1">
     </li>
 </ol>
 <div class="carousel-inner">
                 <div class="item active"><img src="galleries/memento-es/mementopython3-espa%C3%B1ol-0.png" alt="" style="margin: 0 auto 0 auto;"></div>
                 <div class="item"><img src="galleries/memento-es/mementopython3-espa%C3%B1ol-1.png" alt="" style="margin: 0 auto 0 auto;"></div>
     </div>
-    <a class="left carousel-control" href="articulos/hoja-resumen-de-python.html#slides_d7868e7f51ac42059703a6a9c1ad8c1e" data-slide="prev"><span class="icon-prev"></span></a>
-    <a class="right carousel-control" href="articulos/hoja-resumen-de-python.html#slides_d7868e7f51ac42059703a6a9c1ad8c1e" data-slide="next"><span class="icon-next"></span></a>
+    <a class="left carousel-control" href="articulos/hoja-resumen-de-python.html#slides_5ad672191a1b470aa8070e3524867afd" data-slide="prev"><span class="icon-prev"></span></a>
+    <a class="right carousel-control" href="articulos/hoja-resumen-de-python.html#slides_5ad672191a1b470aa8070e3524867afd" data-slide="next"><span class="icon-next"></span></a>
 </div>
 <p>La <a class="reference external" href="http://perso.limsi.fr/pointal/python:memento">versión original</a> en francés tiene licencia Creative Commons Atribución 2.0 y la hizo Laurent Pointal.</p>
 </div>
@@ -434,16 +437,16 @@ $ <span class="nb">echo</span> <span class="s1">'export EDITOR="gedit"'</span> &
 <h2>Python es Elegante</h2>
 <p>A diferencia de otros lenguajes, la estructura de un programa de Python viene dada por la indentación. Esto contribuye al aspecto limpio y ordenado de los programas hechos en Python.</p>
 <p>Así, un bloque if se escribe así:</p>
-<pre class="code python"><a name="rest_code_c711f96305154693a8685c64f897617f-1"></a><span class="k">if</span> <span class="bp">True</span><span class="p">:</span>
-<a name="rest_code_c711f96305154693a8685c64f897617f-2"></a>    <span class="k">print</span> <span class="s2">"Verdadero"</span>
-<a name="rest_code_c711f96305154693a8685c64f897617f-3"></a><span class="k">else</span><span class="p">:</span>
-<a name="rest_code_c711f96305154693a8685c64f897617f-4"></a>    <span class="k">print</span> <span class="s2">"Falso"</span>
+<pre class="code python"><a name="rest_code_c5dac4d87012453ab438ea113e7a120e-1"></a><span class="k">if</span> <span class="bp">True</span><span class="p">:</span>
+<a name="rest_code_c5dac4d87012453ab438ea113e7a120e-2"></a>    <span class="k">print</span> <span class="s2">"Verdadero"</span>
+<a name="rest_code_c5dac4d87012453ab438ea113e7a120e-3"></a><span class="k">else</span><span class="p">:</span>
+<a name="rest_code_c5dac4d87012453ab438ea113e7a120e-4"></a>    <span class="k">print</span> <span class="s2">"Falso"</span>
 </pre>
 <p>Las repeticiones son muy sencillas también, igual que las listas:</p>
-<pre class="code python"><a name="rest_code_249d3c38d3054ba4af6b5f811cfa895d-1"></a><span class="n">mi_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"papa"</span><span class="p">,</span> <span class="s2">"mama"</span><span class="p">,</span> <span class="s2">"bebe"</span><span class="p">]</span>
-<a name="rest_code_249d3c38d3054ba4af6b5f811cfa895d-2"></a>
-<a name="rest_code_249d3c38d3054ba4af6b5f811cfa895d-3"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">mi_lista</span><span class="p">:</span>
-<a name="rest_code_249d3c38d3054ba4af6b5f811cfa895d-4"></a>    <span class="k">print</span> <span class="p">(</span> <span class="n">i</span> <span class="o">+</span> <span class="s2">" es feliz"</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_5053c8244d9f4ef49e75cc065a9a32c1-1"></a><span class="n">mi_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"papa"</span><span class="p">,</span> <span class="s2">"mama"</span><span class="p">,</span> <span class="s2">"bebe"</span><span class="p">]</span>
+<a name="rest_code_5053c8244d9f4ef49e75cc065a9a32c1-2"></a>
+<a name="rest_code_5053c8244d9f4ef49e75cc065a9a32c1-3"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">mi_lista</span><span class="p">:</span>
+<a name="rest_code_5053c8244d9f4ef49e75cc065a9a32c1-4"></a>    <span class="k">print</span> <span class="p">(</span> <span class="n">i</span> <span class="o">+</span> <span class="s2">" es feliz"</span><span class="p">)</span>
 </pre>
 </div>
 </div>

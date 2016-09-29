@@ -6,19 +6,20 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Automatiza tu ambiente virtual con Virtualenv y Direnv | Viva Python</title>
+<title>Automatízate con Virtualenv y Direnv | Viva Python</title>
 <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
-<link rel="canonical" href="http://vivapython.com/articulos/automatiza-tu-ambiente-virtual-con-virtualenv-y-direnv.html">
+<link rel="canonical" href="http://vivapython.com/articulos/automatizate-con-virtualenv-y-direnv.html">
 <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><meta name="author" content="equipo viva python">
 <meta property="og:site_name" content="Viva Python">
-<meta property="og:title" content="Automatiza tu ambiente virtual con Virtualenv y Direnv">
-<meta property="og:url" content="http://vivapython.com/articulos/automatiza-tu-ambiente-virtual-con-virtualenv-y-direnv.html">
+<meta property="og:title" content="Automatízate con Virtualenv y Direnv">
+<meta property="og:url" content="http://vivapython.com/articulos/automatizate-con-virtualenv-y-direnv.html">
 <meta property="og:description" content="Una forma conveniente de elegir entre Python2 y Python3 es crear un ambiente virtual virtualenv.
 Virtualenv es una herramienta que permite crear una copia del entorno Python, aislada de la del sistema">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2016-09-29T01:22:23-05:00">
+<meta property="article:tag" content="python3 virtualenv bibliotecas trucos">
 </head>
 <body>
 
@@ -132,14 +133,14 @@ document.write(textArray[randomNumber]);
         <!--Body content-->
         <div class="row">
             
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Automatiza tu ambiente virtual con Virtualenv y Direnv</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Automatízate con Virtualenv y Direnv</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                     <a href="../authors/equipo-viva-python.html">equipo viva python</a>
             </span></p>
             <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2016-09-29T01:22:23-05:00" itemprop="datePublished" title="2016-09-29 01:22">2016-09-29 01:22</time></a></p>
-                <p class="commentline">            <a href="automatiza-tu-ambiente-virtual-con-virtualenv-y-direnv.html#disqus_thread" data-disqus-identifier="cache/posts/automatiza-tu-ambiente-virtual-con-virtualenv-y-direnv.html">Comments</a>
+                <p class="commentline">            <a href="automatizate-con-virtualenv-y-direnv.html#disqus_thread" data-disqus-identifier="cache/posts/automatizate-con-virtualenv-y-direnv.html">Comments</a>
 
 
             
@@ -167,7 +168,7 @@ $ <span class="nb">echo</span> <span class="s1">'export EDITOR="gedit"'</span> &
 <h4>Y la magia es...</h4>
 <p>Primero creamos y/o entramos a un directorio de proyecto, <code>mkdir -p ruta/a_mi_proyecto/ &amp;&amp; cd ruta/a_mi_proyecto/</code>.</p>
 <p>Luego crearemos la definición de entorno con el comando <code>direnv edit .</code>.</p>
-<p>Entramos lo siguiente en el editor vacío que se abrirá:</p>
+<p>Entramos lo siguiente en el editor vacío que se abrirá editando el archivo <code>.envrc</code>:</p>
 <pre class="code literal-block"><span></span>layout python
 </pre>
 
@@ -188,9 +189,15 @@ $ <span class="nb">echo</span> <span class="s1">'export EDITOR="gedit"'</span> &
 
 
 <p>Podrás comprobar que el intérprete de Python corre desde el entorno virtual con <code>which python</code>. Podrás instalar bibliotecas de Python en tu ambiente virtual sin interferir con tu sistema operativo. Cuando dejes el directorio, el ambiente se restaurará.</p>
+<p>Como referencia aquí dejo:
+- La documentación de <code>direnv</code>: https://github.com/direnv/direnv
+- Algunas notas específicas sobre Python y direnv: https://github.com/direnv/direnv/wiki/Python</p>
 </div>
     </div>
-    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../categorias/python3-virtualenv-bibliotecas-trucos.html" rel="tag">python3 virtualenv bibliotecas trucos</a></li>
+        </ul>
+<ul class="pager hidden-print">
 <li class="previous">
                 <a href="hoja-resumen-de-python.html" rel="prev" title="Hoja Resumen de Python 3">Publicación anterior</a>
             </li>
@@ -198,9 +205,9 @@ $ <span class="nb">echo</span> <span class="s1">'export EDITOR="gedit"'</span> &
                         <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="vivapython",
-            disqus_url="http://vivapython.com/articulos/automatiza-tu-ambiente-virtual-con-virtualenv-y-direnv.html",
-        disqus_title="Automatiza tu ambiente virtual con Virtualenv y Direnv",
-        disqus_identifier="cache/posts/automatiza-tu-ambiente-virtual-con-virtualenv-y-direnv.html",
+            disqus_url="http://vivapython.com/articulos/automatizate-con-virtualenv-y-direnv.html",
+        disqus_title="Automat\u00edzate con Virtualenv y Direnv",
+        disqus_identifier="cache/posts/automatizate-con-virtualenv-y-direnv.html",
         disqus_config = function () {
             this.language = "es_ES";
         };
