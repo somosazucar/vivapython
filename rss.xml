@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Viva Python</title><link>http://vivapython.com/</link><description>Aprenda sobre el lenguaje favorito de programación del mundo.</description><atom:link rel="self" href="http://vivapython.com/rss.xml" type="application/rss+xml"></atom:link><language>es</language><lastBuildDate>Thu, 29 Sep 2016 05:36:30 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Hoja Resumen de Python 3</title><link>http://vivapython.com/articulos/hoja-resumen-de-python.html</link><dc:creator>icarito</dc:creator><description>&lt;div&gt;&lt;p&gt;Es bien sabido que los mejores programadores son los más perezosos. Por lo tanto, si no deseas leer un manual o tutorial, lo mejor es recurrir a una hoja resumen, un atajo, un &lt;em&gt;torpedo&lt;/em&gt;, una copia, un &lt;em&gt;machete&lt;/em&gt;, una trampita con justo la información necesaria para lanzarse a probar Python.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Viva Python</title><link>http://vivapython.com/</link><description>Aprenda sobre el lenguaje favorito de programación del mundo.</description><atom:link type="application/rss+xml" rel="self" href="http://vivapython.com/rss.xml"></atom:link><language>es</language><lastBuildDate>Thu, 29 Sep 2016 07:22:39 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Automatiza tu ambiente virtual con Virtualenv y Direnv</title><link>http://vivapython.com/articulos/automatiza-tu-ambiente-virtual-con-virtualenv-y-direnv.html</link><dc:creator>equipo viva python</dc:creator><description>&lt;div&gt;&lt;p&gt;Una forma conveniente de elegir entre Python2 y Python3 es crear un ambiente virtual &lt;code&gt;virtualenv&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Virtualenv&lt;/strong&gt; es una herramienta que permite crear una copia del entorno Python, aislada de la del sistema operativo de base.&lt;/p&gt;
+&lt;p&gt;Esto es útil para utilizar un entorno Python de una versión diferente a la del sistema. También lo es para evitar instalar en el sistema paquetes de bibliotecas que solo se necesitan para un proyecto particular. Finalmente se evita el problema de cuando una actualización deja inservible un programa por éste depender de una versión anterior de las bibliotecas del sistema.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Direnv&lt;/strong&gt; permite automatizar el proceso (algo tedioso) de crear y recordar activar el ambiente virtual para cada proyecto (aquí concebido como directorio).&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt install direnv virtualenv &lt;span class="c1"&gt;# en Debian y derivados&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;h3&gt;Direnv para automatizar todo&lt;/h3&gt;
+&lt;p&gt;Una vez instalados los paquetes respectivos, es necesario hacer algunos ajustes al intérprete de comandos de la terminal (generalmente &lt;em&gt;bash&lt;/em&gt;):&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;$ direnv hook bash
+$ &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;'export EDITOR="gedit"'&lt;/span&gt; &amp;gt; ~/.bashrc
+&lt;/pre&gt;
+
+
+&lt;p&gt;Es necesario definir la variable de entorno EDITOR con el nombre de nuestro editor de preferencia, y por ello la hemos colocado en el &lt;em&gt;script&lt;/em&gt; de arranque de &lt;em&gt;bash&lt;/em&gt;, &lt;code&gt;~/.bashrc&lt;/code&gt; la referencia a &lt;em&gt;gedit&lt;/em&gt;. Abra una nueva terminal para que estos cambios queden aplicados al entorno.&lt;/p&gt;
+&lt;h4&gt;Y la magia es...&lt;/h4&gt;
+&lt;p&gt;Primero creamos y/o entramos a un directorio de proyecto, &lt;code&gt;mkdir -p ruta/a_mi_proyecto/ &amp;amp;&amp;amp; cd ruta/a_mi_proyecto/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Luego crearemos la definición de entorno con el comando &lt;code&gt;direnv edit .&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Entramos lo siguiente en el editor vacío que se abrirá:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;layout python
+&lt;/pre&gt;
+
+
+&lt;p&gt;o para Python 3:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;layout python3
+&lt;/pre&gt;
+
+
+&lt;p&gt;El resultado:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;direnv&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;loading&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;envrc&lt;/span&gt;
+&lt;span class="n"&gt;Running&lt;/span&gt; &lt;span class="n"&gt;virtualenv&lt;/span&gt; &lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="n"&gt;interpreter&lt;/span&gt; &lt;span class="sr"&gt;/usr/bin/&lt;/span&gt;&lt;span class="n"&gt;python&lt;/span&gt;
+&lt;span class="n"&gt;New&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt; &lt;span class="n"&gt;executable&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="sr"&gt;/home/icarito/Proyectos/zyngo_sol/.direnv/python-2.7.12+/bin/&lt;/span&gt;&lt;span class="n"&gt;python&lt;/span&gt;
+&lt;span class="n"&gt;Installing&lt;/span&gt; &lt;span class="n"&gt;setuptools&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;pkg_resources&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;pip&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;wheel&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="n"&gt;direnv&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;([&lt;/span&gt;&lt;span class="n"&gt;direnv&lt;/span&gt; &lt;span class="n"&gt;export&lt;/span&gt; &lt;span class="n"&gt;bash&lt;/span&gt;&lt;span class="o"&gt;])&lt;/span&gt; &lt;span class="k"&gt;is&lt;/span&gt; &lt;span class="n"&gt;taking&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;execute&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="n"&gt;Use&lt;/span&gt; &lt;span class="n"&gt;CTRL&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;give&lt;/span&gt; &lt;span class="n"&gt;up&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+&lt;span class="n"&gt;done&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+&lt;span class="n"&gt;direnv&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;export&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;VIRTUAL_ENV&lt;/span&gt; &lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="n"&gt;PATH&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;Podrás comprobar que el intérprete de Python corre desde el entorno virtual con &lt;code&gt;which python&lt;/code&gt;. Podrás instalar bibliotecas de Python en tu ambiente virtual sin interferir con tu sistema operativo. Cuando dejes el directorio, el ambiente se restaurará.&lt;/p&gt;&lt;/div&gt;</description><guid>http://vivapython.com/articulos/automatiza-tu-ambiente-virtual-con-virtualenv-y-direnv.html</guid><pubDate>Thu, 29 Sep 2016 06:22:23 GMT</pubDate></item><item><title>Hoja Resumen de Python 3</title><link>http://vivapython.com/articulos/hoja-resumen-de-python.html</link><dc:creator>icarito</dc:creator><description>&lt;div&gt;&lt;p&gt;Es bien sabido que los mejores programadores son los más perezosos. Por lo tanto, si no deseas leer un manual o tutorial, lo mejor es recurrir a una hoja resumen, un atajo, un &lt;em&gt;torpedo&lt;/em&gt;, una copia, un &lt;em&gt;machete&lt;/em&gt;, una trampita con justo la información necesaria para lanzarse a probar Python.&lt;/p&gt;
 &lt;p&gt;Esta hoja la puedes imprimir, colocar en tu cuarto, ventana, cubículo, escritorio, etc.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://vivapython.com/articulos/hoja-resumen-de-python.html"&gt;Leer más…&lt;/a&gt; (quedan 1 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>cheatsheet</category><category>resumen</category><category>tutorial</category><guid>http://vivapython.com/articulos/hoja-resumen-de-python.html</guid><pubDate>Tue, 23 Sep 2014 05:27:04 GMT</pubDate></item><item><title>Carta a un Joven Programador</title><link>http://vivapython.com/articulos/carta-a-un-joven-programador.html</link><dc:creator>icarito</dc:creator><description>&lt;div&gt;&lt;p&gt;Querido (insertar nombre aquí),&lt;/p&gt;
 &lt;p&gt;He escuchado que disfrutas de cierto lenguaje de programación llamado Python.&lt;/p&gt;
