@@ -1,8 +1,8 @@
 <!-- 
-.. title: Automatiza tu ambiente virtual con Virtualenv y Direnv
-.. slug: automatiza-tu-ambiente-virtual-con-virtualenv-y-direnv
+.. title: Automatízate con Virtualenv y Direnv
+.. slug: automatizate-con-virtualenv-y-direnv
 .. date: 2016-09-29 01:22:23 UTC-05:00
-.. tags: 
+.. tags: python3 virtualenv bibliotecas trucos
 .. category: 
 .. link: 
 .. description: 
@@ -38,7 +38,7 @@ Primero creamos y/o entramos a un directorio de proyecto, `mkdir -p ruta/a_mi_pr
 
 Luego crearemos la definición de entorno con el comando `direnv edit .`.
 
-Entramos lo siguiente en el editor vacío que se abrirá:
+Entramos lo siguiente en el editor vacío que se abrirá editando el archivo `.envrc`:
 
 ```
 layout python
@@ -62,3 +62,7 @@ direnv: export +VIRTUAL_ENV ~PATH
 ```
 
 Podrás comprobar que el intérprete de Python corre desde el entorno virtual con `which python`. Podrás instalar bibliotecas de Python en tu ambiente virtual sin interferir con tu sistema operativo. Cuando dejes el directorio, el ambiente se restaurará.
+
+Como referencia aquí dejo:
+- La documentación de `direnv`: https://github.com/direnv/direnv
+- Algunas notas específicas sobre Python y direnv: https://github.com/direnv/direnv/wiki/Python
