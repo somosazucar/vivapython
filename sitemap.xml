@@ -7,122 +7,134 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://vivapython.com/2014/index.html</loc>
-  <lastmod>2016-09-30T03:05:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/2016/index.html</loc>
-  <lastmod>2016-09-30T03:05:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/archive.html</loc>
-  <lastmod>2016-09-30T03:05:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/articulos/10-razones-para-elegir-python.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/articulos/automatizate-con-virtualenv-y-direnv.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/articulos/carta-a-un-joven-programador.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/articulos/hoja-resumen-de-python.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/articulos/instala-python.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/articulos/porque-python.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/articulos/python-2-o-python-3.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/articulos/zen.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/authors/equipo-viva-python.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/authors/icarito.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/authors/index.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/authors/kaametza.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://vivapython.com/categorias/bibliotecas.html</loc>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/categorias/cheatsheet.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/categorias/estilo.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/categorias/faq.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/categorias/humor.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/categorias/index.html</loc>
-  <lastmod>2016-09-30T03:05:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/categorias/inspiracion.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/categorias/opinion.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/categorias/python2.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
-  <loc>http://vivapython.com/categorias/python3-virtualenv-bibliotecas-trucos.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <loc>http://vivapython.com/categorias/python3.html</loc>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/categorias/resumen.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://vivapython.com/categorias/trucos.html</loc>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/categorias/tutorial.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://vivapython.com/categorias/virtualenv.html</loc>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/galleries/index.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/galleries/memento-es/index.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/index.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://vivapython.com/paginas/preguntas-frecuentes.html</loc>
-  <lastmod>2016-09-30T03:06:00Z</lastmod>
+  <lastmod>2016-09-30T03:13:00Z</lastmod>
  </url>
 </urlset>
