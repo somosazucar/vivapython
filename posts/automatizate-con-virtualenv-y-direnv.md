@@ -2,7 +2,7 @@
 .. title: Automatízate con Virtualenv y Direnv
 .. slug: automatizate-con-virtualenv-y-direnv
 .. date: 2016-09-29 01:22:23 UTC-05:00
-.. tags: python3 virtualenv bibliotecas trucos
+.. tags: python3,virtualenv,bibliotecas,trucos
 .. category: 
 .. link: 
 .. description: 
