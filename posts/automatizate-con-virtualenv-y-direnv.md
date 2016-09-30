@@ -50,6 +50,8 @@ o para Python 3:
 layout python3
 ```
 
+Cabe resaltar que además de esta directiva interna de `direnv`, es posible colocar en este archivo todo tipo de comandos bash, los cuales se ejecutarán toda vez que se acceda al directorio.
+
 El resultado:
 
 ```
