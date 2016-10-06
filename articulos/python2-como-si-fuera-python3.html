@@ -5,14 +5,22 @@ article: http://ogp.me/ns/article#
 " lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Etiquetas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Etiquetas | Viva Python</title>
+<title>Python2 como si fuera Python3 | Viva Python</title>
 <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
-<link rel="canonical" href="http://vivapython.com/categorias/index.html">
-<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]-->
+<link rel="canonical" href="http://vivapython.com/articulos/python2-como-si-fuera-python3.html">
+<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><meta name="author" content="icarito">
+<meta property="og:site_name" content="Viva Python">
+<meta property="og:title" content="Python2 como si fuera Python3">
+<meta property="og:url" content="http://vivapython.com/articulos/python2-como-si-fuera-python3.html">
+<meta property="og:description" content="Para cualquier proyecto hoy en día es recomendable utilizar Python3 en vez de Python2, pero ocasionalmente uno encuentra una biblioteca incompatible o requiere utilizar un programa ya hecho que aún fu">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2016-10-06T14:00:34-05:00">
+<meta property="article:tag" content="python2">
+<meta property="article:tag" content="python3">
+<meta property="article:tag" content="trucos">
 </head>
 <body>
 
@@ -33,11 +41,11 @@ article: http://ogp.me/ns/article#
 <!-- /.navbar-header -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-<li class="active">
-<a href="#">Artículos y tutoriales <span class="sr-only">(activo)</span></a>
+<li>
+<a href="../categorias/index.html">Artículos y tutoriales</a>
                 </li>
 <li>
-<a href="../articulos/instala-python.html">Instala Python</a>
+<a href="instala-python.html">Instala Python</a>
 
                 
             </li>
@@ -50,7 +58,7 @@ article: http://ogp.me/ns/article#
 </nav><!-- End of Menubar --><div class="col-md-4 pull-right">
 
     <br><blockquote>
-    <a href="../articulos/zen.html">
+    <a href="zen.html">
     <p>
     <script>
 
@@ -126,23 +134,68 @@ document.write(textArray[randomNumber]);
         <!--Body content-->
         <div class="row">
             
-<h1>Etiquetas</h1>
-    <ul class="list-inline">
-<li><a class="reference badge" href="bibliotecas.html">bibliotecas</a></li>
-            <li><a class="reference badge" href="cheatsheet.html">cheatsheet</a></li>
-            <li><a class="reference badge" href="estilo.html">estilo</a></li>
-            <li><a class="reference badge" href="faq.html">faq</a></li>
-            <li><a class="reference badge" href="guia.html">guia</a></li>
-            <li><a class="reference badge" href="humor.html">humor</a></li>
-            <li><a class="reference badge" href="inspiracion.html">inspiracion</a></li>
-            <li><a class="reference badge" href="opinion.html">opinion</a></li>
-            <li><a class="reference badge" href="python2.html">python2</a></li>
-            <li><a class="reference badge" href="python3.html">python3</a></li>
-            <li><a class="reference badge" href="resumen.html">resumen</a></li>
-            <li><a class="reference badge" href="trucos.html">trucos</a></li>
-            <li><a class="reference badge" href="tutorial.html">tutorial</a></li>
-            <li><a class="reference badge" href="virtualenv.html">virtualenv</a></li>
-    </ul>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Python2 como si fuera Python3</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                    <a href="../authors/icarito.html">icarito</a>
+            </span></p>
+            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2016-10-06T14:00:34-05:00" itemprop="datePublished" title="2016-10-06 14:00">2016-10-06 14:00</time></a></p>
+                <p class="commentline">            <a href="python2-como-si-fuera-python3.html#disqus_thread" data-disqus-identifier="cache/posts/python2-como-si-fuera-python3.html">Comments</a>
+
+
+            
+        </p>
+</div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>Para cualquier proyecto hoy en día es recomendable utilizar Python3 en vez de Python2, pero ocasionalmente uno encuentra una biblioteca incompatible o requiere utilizar un programa ya hecho que aún funciona únicamente en Python2.</p>
+<pre class="code literal-block"><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="p">(</span><span class="n">absolute_import</span><span class="p">,</span> <span class="n">division</span><span class="p">,</span>
+                        <span class="n">print_function</span><span class="p">,</span> <span class="n">unicode_literals</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">six</span>
+</pre>
+
+
+<p>Con el encantamiento precedente, se consigue que el intérprete de Python2 se comporte en forma muy similar a como lo haría Python3. Mi característica favorita de Python3 es el manejo transparente de texto en <em>Unicode</em> para hacer caracteres acentúados - <em>áéíóú</em>.</p>
+<p>Otra ventaja es que es una forma simple de ir moviendo código de Python2 a Python3, aún manteniendo soporte para Python2, ¡este código ahora seguramente será <strong>de una vez compatible con Python3</strong>!</p>
+<p>Referencias:</p>
+<ul>
+<li>
+<a href="http://matplotlib.org/devel/portable_code.html">Writing code for Python 2 and 3</a> - Sitio web de MatPlotLib 06/10/2016</li>
+</ul>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../categorias/python2.html" rel="tag">python2</a></li>
+            <li><a class="tag p-category" href="../categorias/python3.html" rel="tag">python3</a></li>
+            <li><a class="tag p-category" href="../categorias/trucos.html" rel="tag">trucos</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="automatizate-con-virtualenv-y-direnv.html" rel="prev" title="Automatízate con Virtualenv y Direnv">Publicación anterior</a>
+            </li>
+        </ul></nav></aside><section class="comments"><h2>Comentarios</h2>
+                        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="vivapython",
+            disqus_url="http://vivapython.com/articulos/python2-como-si-fuera-python3.html",
+        disqus_title="Python2 como si fuera Python3",
+        disqus_identifier="cache/posts/python2-como-si-fuera-python3.html",
+        disqus_config = function () {
+            this.language = "es_ES";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="vivapython";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
 </div>
         <!--End of body content-->
 
@@ -153,13 +206,13 @@ document.write(textArray[randomNumber]);
             <div class="col-md-4 text-center">
                 <ul>
 <li>
-                    <a href="../articulos/instala-python.html">Instala Python</a>
+                    <a href="instala-python.html">Instala Python</a>
                   </li>
                   <li>
                     <a href="../paginas/preguntas-frecuentes.html">Preguntas Frecuentes</a>
                   </li>
                   <li>
-                    <a href="../articulos/zen.html">El Zen de Python</a>
+                    <a href="zen.html">El Zen de Python</a>
                   </li>
                 </ul>
 </div>

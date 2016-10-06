@@ -12,7 +12,7 @@ article: http://ogp.me/ns/article#
 <meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="http://vivapython.com/index.html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="articulos/automatizate-con-virtualenv-y-direnv.html" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="articulos/python2-como-si-fuera-python3.html" type="text/html">
 </head>
 <body>
 
@@ -128,7 +128,36 @@ document.write(textArray[randomNumber]);
             
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="articulos/automatizate-con-virtualenv-y-direnv.html" class="u-url">Automatízate con Virtualenv y Direnv</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="articulos/python2-como-si-fuera-python3.html" class="u-url">Python2 como si fuera Python3</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                <a href="authors/icarito.html">icarito</a>
+            </span></p>
+            <p class="dateline"><a href="articulos/python2-como-si-fuera-python3.html" rel="bookmark"><time class="published dt-published" datetime="2016-10-06T14:00:34-05:00" title="2016-10-06 14:00">2016-10-06 14:00</time></a></p>
+                <p class="commentline">            <a href="articulos/python2-como-si-fuera-python3.html#disqus_thread" data-disqus-identifier="cache/posts/python2-como-si-fuera-python3.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>Para cualquier proyecto hoy en día es recomendable utilizar Python3 en vez de Python2, pero ocasionalmente uno encuentra una biblioteca incompatible o requiere utilizar un programa ya hecho que aún funciona únicamente en Python2.</p>
+<pre class="code literal-block"><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="p">(</span><span class="n">absolute_import</span><span class="p">,</span> <span class="n">division</span><span class="p">,</span>
+                        <span class="n">print_function</span><span class="p">,</span> <span class="n">unicode_literals</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">six</span>
+</pre>
+
+
+<p>Con el encantamiento precedente, se consigue que el intérprete de Python2 se comporte en forma muy similar a como lo haría Python3. Mi característica favorita de Python3 es el manejo transparente de texto en <em>Unicode</em> para hacer caracteres acentúados - <em>áéíóú</em>.</p>
+<p>Otra ventaja es que es una forma simple de ir moviendo código de Python2 a Python3, aún manteniendo soporte para Python2, ¡este código ahora seguramente será <strong>de una vez compatible con Python3</strong>!</p>
+<p>Referencias:</p>
+<ul>
+<li>
+<a href="http://matplotlib.org/devel/portable_code.html">Writing code for Python 2 and 3</a> - Sitio web de MatPlotLib 06/10/2016</li>
+</ul>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="articulos/automatizate-con-virtualenv-y-direnv.html" class="u-url">Automatízate con Virtualenv y Direnv</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 <a href="authors/equipo-viva-python.html">equipo viva python</a>
@@ -204,19 +233,19 @@ $ <span class="nb">echo</span> <span class="s1">'export EDITOR="gedit"'</span> &
 <p>Esta hoja la puedes imprimir, colocar en tu cuarto, ventana, cubículo, escritorio, etc.</p>
 <!-- TEASER_END -->
 <p>Descarga ya tu versión en <a class="reference external" href="documentos/mementopython3-espa%C3%B1ol.pdf">pdf</a> o la versión editable en formato LibreOffice Draw, <a class="reference external" href="documentos/mementopython3-espa%C3%B1ol.odg">odg</a>.</p>
-<div id="slides_cf961ae5c74c4154bad020d8acd38346" class="carousel slide">
+<div id="slides_cecc331f934044f88805617ca98098ef" class="carousel slide">
     <ol class="carousel-indicators">
-<li data-target="#slides_cf961ae5c74c4154bad020d8acd38346" data-slide-to="0" class="active">
+<li data-target="#slides_cecc331f934044f88805617ca98098ef" data-slide-to="0" class="active">
             </li>
-<li data-target="#slides_cf961ae5c74c4154bad020d8acd38346" data-slide-to="1">
+<li data-target="#slides_cecc331f934044f88805617ca98098ef" data-slide-to="1">
     </li>
 </ol>
 <div class="carousel-inner">
                 <div class="item active"><img src="galleries/memento-es/mementopython3-espa%C3%B1ol-0.png" alt="" style="margin: 0 auto 0 auto;"></div>
                 <div class="item"><img src="galleries/memento-es/mementopython3-espa%C3%B1ol-1.png" alt="" style="margin: 0 auto 0 auto;"></div>
     </div>
-    <a class="left carousel-control" href="articulos/hoja-resumen-de-python.html#slides_cf961ae5c74c4154bad020d8acd38346" data-slide="prev"><span class="icon-prev"></span></a>
-    <a class="right carousel-control" href="articulos/hoja-resumen-de-python.html#slides_cf961ae5c74c4154bad020d8acd38346" data-slide="next"><span class="icon-next"></span></a>
+    <a class="left carousel-control" href="articulos/hoja-resumen-de-python.html#slides_cecc331f934044f88805617ca98098ef" data-slide="prev"><span class="icon-prev"></span></a>
+    <a class="right carousel-control" href="articulos/hoja-resumen-de-python.html#slides_cecc331f934044f88805617ca98098ef" data-slide="next"><span class="icon-next"></span></a>
 </div>
 <p>La <a class="reference external" href="http://perso.limsi.fr/pointal/python:memento">versión original</a> en francés tiene licencia Creative Commons Atribución 2.0 y la hizo Laurent Pointal.</p>
 </div>
@@ -438,16 +467,16 @@ $ <span class="nb">echo</span> <span class="s1">'export EDITOR="gedit"'</span> &
 <h2>Python es Elegante</h2>
 <p>A diferencia de otros lenguajes, la estructura de un programa de Python viene dada por la indentación. Esto contribuye al aspecto limpio y ordenado de los programas hechos en Python.</p>
 <p>Así, un bloque if se escribe así:</p>
-<pre class="code python"><a name="rest_code_70033fb0e2f5407fabe6469541068a6f-1"></a><span class="k">if</span> <span class="bp">True</span><span class="p">:</span>
-<a name="rest_code_70033fb0e2f5407fabe6469541068a6f-2"></a>    <span class="k">print</span> <span class="s2">"Verdadero"</span>
-<a name="rest_code_70033fb0e2f5407fabe6469541068a6f-3"></a><span class="k">else</span><span class="p">:</span>
-<a name="rest_code_70033fb0e2f5407fabe6469541068a6f-4"></a>    <span class="k">print</span> <span class="s2">"Falso"</span>
+<pre class="code python"><a name="rest_code_3733c94db150405d9851e0393e24e32b-1"></a><span class="k">if</span> <span class="bp">True</span><span class="p">:</span>
+<a name="rest_code_3733c94db150405d9851e0393e24e32b-2"></a>    <span class="k">print</span> <span class="s2">"Verdadero"</span>
+<a name="rest_code_3733c94db150405d9851e0393e24e32b-3"></a><span class="k">else</span><span class="p">:</span>
+<a name="rest_code_3733c94db150405d9851e0393e24e32b-4"></a>    <span class="k">print</span> <span class="s2">"Falso"</span>
 </pre>
 <p>Las repeticiones son muy sencillas también, igual que las listas:</p>
-<pre class="code python"><a name="rest_code_1495b3f0685946e793f3741753b5a6cc-1"></a><span class="n">mi_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"papa"</span><span class="p">,</span> <span class="s2">"mama"</span><span class="p">,</span> <span class="s2">"bebe"</span><span class="p">]</span>
-<a name="rest_code_1495b3f0685946e793f3741753b5a6cc-2"></a>
-<a name="rest_code_1495b3f0685946e793f3741753b5a6cc-3"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">mi_lista</span><span class="p">:</span>
-<a name="rest_code_1495b3f0685946e793f3741753b5a6cc-4"></a>    <span class="k">print</span> <span class="p">(</span> <span class="n">i</span> <span class="o">+</span> <span class="s2">" es feliz"</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_1bdae499603b471aabe249f9f335eb6a-1"></a><span class="n">mi_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"papa"</span><span class="p">,</span> <span class="s2">"mama"</span><span class="p">,</span> <span class="s2">"bebe"</span><span class="p">]</span>
+<a name="rest_code_1bdae499603b471aabe249f9f335eb6a-2"></a>
+<a name="rest_code_1bdae499603b471aabe249f9f335eb6a-3"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">mi_lista</span><span class="p">:</span>
+<a name="rest_code_1bdae499603b471aabe249f9f335eb6a-4"></a>    <span class="k">print</span> <span class="p">(</span> <span class="n">i</span> <span class="o">+</span> <span class="s2">" es feliz"</span><span class="p">)</span>
 </pre>
 </div>
 </div>
