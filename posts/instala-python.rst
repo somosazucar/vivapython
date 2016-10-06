@@ -1,7 +1,7 @@
 .. title: Instala Python
 .. slug: instala-python
 .. date: 2014-09-15 09:35:01 UTC-05:00
-.. tags: 
+.. tags: guia
 .. link: 
 .. description: 
 .. type: text
